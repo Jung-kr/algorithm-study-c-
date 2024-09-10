@@ -1,0 +1,30 @@
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+vector<int> firstPattern = {1, 2, 3, 4, 5};
+vector<int> secondPattern = {2, 1, 2, 3, 2, 4, 2, 5,};
+vector<int> thirdPattern = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
+
+vector<int> solution(vector<int> answers) {
+    vector<int> answer;
+    vector<int> correctCnt(4, 0);
+    
+    for(int i = 0 ; i < answers.size() ; i++) {  //임의의 배열은 최대한 적게!
+        if(firstPattern[i % 5] == answers[i]) correctCnt[1]++;
+        if(secondPattern[i % 8] == answers[i]) correctCnt[2]++;
+        if(thirdPattern[i % 10] == answers[i]) correctCnt[3]++;
+    }
+    
+    int max = *max_element(correctCnt.begin(), correctCnt.end());  //컨테이너(vector, set, map...) 내에서 최대값
+    
+    for(int i = 1 ; i <= 3 ; i++) {  //(중복시 정렬하여)최대값의 인덱스 구하는 방법
+        if(correctCnt[i] == max) {
+            answer.push_back(i);
+        }
+    }
+    
+    return answer;
+}
