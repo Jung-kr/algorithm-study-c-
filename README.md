@@ -1,3 +1,4 @@
+
 ## 📙 algorithm-study
 
 * 코딤 테스트 합격자 되기 C++편을 공부한 내용을 저장하는 리파지토리입니다.
@@ -11,11 +12,17 @@
   * 문제 : https://school.programmers.co.kr/learn/courses/30/lessons/68644
   * set: 중복 허용 X, 자동 정렬
   * set 사용 후 반환 타입인 vector를 맞추기 위해 vector로 변환 
-* 문제 2) [모의고사*]()
-  * 문제: 
+* 문제 2) [모의고사*](https://github.com/Jung-kr/algorithm-study-programmers/blob/main/array/problem2)
+  * 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42840
+  * (중복시 정렬하여)최대값의 인덱스 구하는 방법
+  * int max = *max_element(correctCnt.begin(), correctCnt.end());  //컨테이너(vector, set, map...) 내에서 최대값
 * 문제 3) [행렬의 곱셈*]()
   * 문제:
 * 문제 4) [실패율** ]()
   * 문제: 
-* 문제 5) [방문길이**]()
-  * 문제: 
+* 문제 5) [방문길이**](https://github.com/Jung-kr/algorithm-study-programmers/blob/main/array/problem5)
+  * 문제: https://school.programmers.co.kr/learn/courses/30/lessons/49994
+  * 2차원 공간에서의 방향 벡터 문제 기본 세팅
+  * 2차원 공간에서의 중복 -> 3차원 배열 사용 bool check[11][11][4];  //[x좌표][y좌표][방향 인덱스]가 true or false
+
+--- 
