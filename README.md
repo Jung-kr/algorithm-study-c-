@@ -16,8 +16,10 @@
   * 문제: https://school.programmers.co.kr/learn/courses/30/lessons/42840
   * (중복시 정렬하여)최대값의 인덱스 구하는 방법
   * int max = *max_element(correctCnt.begin(), correctCnt.end());  //컨테이너(vector, set, map...) 내에서 최대값
-* 문제 3) [행렬의 곱셈*]()
-  * 문제:
+* 문제 3) [행렬의 곱셈*](https://github.com/Jung-kr/algorithm-study-programmers/blob/main/array/problem3)
+  * 문제: https://school.programmers.co.kr/learn/courses/30/lessons/12949
+  * 2차원 벡터에 접근하기 위해서는 필요한 영역을 미리 할당해줘야 함  //vector<vector<int>> answer; -> answer[i][k] += ...//접근 불가능
+  * vector<vector<int>> answer(arr1.size(), vector<int>(arr2[0].size(), 0));  //arr1의 행, arr2의 열 크기를 가진 2차원 벡터 answer 
 * 문제 4) [실패율** ]()
   * 문제: 
 * 문제 5) [방문길이**](https://github.com/Jung-kr/algorithm-study-programmers/blob/main/array/problem5)
