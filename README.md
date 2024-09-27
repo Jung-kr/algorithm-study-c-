@@ -33,7 +33,7 @@
 `unordered_set`, `unordered_map` 은 내부 구조가 해시 기반이기 때문에 **삽입**, **삭제**, **탐색**의 시간 복잡도가 **O(1)** 
 * 기초 1) [두 개의 수로 특정 값 만들기*](https://github.com/Jung-kr/algorithm-study-programmers/blob/main/hash/problem1)
   * 해시 개념에 대한 기본 문제, vector로 해시 구축
-  * O(1)으로 데이터 접근이 필요할 때 -> 미리 데이터로 해시를 구축하 배열 인덱스로 접근
+  * O(1)으로 데이터 접근이 필요할 때 -> 해시 테이블의 value가 정수값이므로 vector로 해시 구축하고 배열 인덱스로 접근 (정수가 아니라면 unordered_set, unordered_map으로)
  
 ### 12. BackTracking (백트래킹)
 [백트래킹](https://velog.io/@jungwy98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EB%B0%B1%ED%8A%B8%EB%9E%98%ED%82%B9)  
